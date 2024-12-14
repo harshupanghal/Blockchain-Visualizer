@@ -1,7 +1,25 @@
 extends layout
 
 block content
-  .container(style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center;")
-    p(style="margin-top: 20px; font-size:2rem;")
-      | This is a visual demo of how Blockchain works, some actions are visually shown here like hash generation, block mining, Blockchain creation, effect of diffculty on nonce etc. For more detailed info, visit :
+  .container(style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; text-align: center; padding: 20px;")
+    
+    h1(style="font-size: 3rem; font-weight: bold; margin-bottom: 20px;")
+      | Blockchain Visual Demo
 
+    p(style="font-size: 1.2rem; margin-bottom: 30px; max-width: 800px; line-height: 1.6;")
+      | This is a visual demonstration of how Blockchain technology works. 
+      | You will see various actions such as hash generation, block mining, Blockchain creation, 
+      | and how difficulty levels affect nonce calculations.
+ 
+    // Example of Dynamic Content Section (Additional Details)
+    .block-info(style="margin-top: 50px; background-color: #f0f0f0; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 100%; max-width: 900px;")
+      h2(style="font-size: 2rem; margin-bottom: 10px;")
+        | Blockchain Demo Details
+      p(style="font-size: 1.2rem; line-height: 1.6;")
+        | Here's where you will visually see how different processes like hash generation, mining, and Blockchain structure creation unfold in real-time.
+        
+
+    // Footer Section (for additional links, credits, etc.)
+    footer(style="margin-top: 60px; font-size: 1rem; color: #888;")
+      p
+        | Created with ❤️ by Blockchain  
